@@ -25,19 +25,29 @@
 /* CSS Reset  */
 html {
   font-size: 67.5%;
+  /* overflow: auto; */
 }
 * {
   box-sizing: border-box;
 }
 body {
+  /* overflow-x: hidden; */
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
   font-family: "Overpass", sans-serif;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+p {
+  line-height: 1.6;
 }
 /* navbar  */
 header {
   background: url("images/bg-pattern-intro-desktop.svg"), var(--LightRed);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
   border-radius: 0 0 0 5rem;
 }
 .navbar {
@@ -166,7 +176,75 @@ header {
 .hero__button-one {
   color: var(--LightRed);
 }
+
+/* about  */
+.about {
+  color: var(--VeryDarkBlue);
+  /* width: 100%; */
+  margin: 20rem auto;
+  /* max-width: 1200px; */
+}
+.about__left {
+  width: 50%;
+  /* width: calc(100% - 750px); */
+  /* flex-basis: 50%; */
+  /* position: inherit; */
+}
+.about__title {
+  text-align: center;
+  font-size: 3rem;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  /* position: relative; */
+}
+.about__img-mobile {
+  display: none;
+}
+.about__img-desktop {
+  width: 80%;
+  float: right;
+}
+.about__right {
+  /* width: 800px; */
+  position: absolute;
+  right: 0;
+  /* top: -100px; */
+}
+.about__left {
+  width: 60%;
+  margin: auto;
+  float: left;
+}
 @media only screen and (max-width: 780px) {
+  .hero {
+    height: 90vh;
+  }
+  .about__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .about__img-mobile {
+    display: block;
+    width: 100%;
+  }
+  .about__right {
+    order: 1;
+    position: relative;
+    width: 100%;
+  }
+  .about__left {
+    order: 2;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about__img-desktop {
+    display: none;
+  }
   .navbar__menu {
     position: fixed;
     left: -100%;

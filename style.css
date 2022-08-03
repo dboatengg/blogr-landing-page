@@ -418,17 +418,26 @@ header {
 }
 
 @media only screen and (max-width: 968px) {
+  .bottom {
+    margin: 15rem auto 5rem auto;
+  }
   .bottom__container {
     flex-direction: column;
     width: 90%;
     margin: auto;
   }
+  /* .bottom__img {
+    text-align: center;
+  } */
   .bottom__img-desktop {
     display: none;
   }
   .bottom__img-mobile {
     display: block;
-    width: 100%;
+    transform: scale(2.2);
+    position: relative;
+    margin-bottom: 10rem;
+    /* min-width: 600px; */
   }
   .bottom__text {
     width: 100%;

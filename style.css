@@ -63,7 +63,6 @@ header {
 .navbar {
   overflow: hidden;
   background-color: transparent;
-  /* height: 70px; */
   height: 10vh;
   display: flex;
   align-items: center;
@@ -81,7 +80,6 @@ header {
   overflow: hidden;
 }
 .navbar a {
-  /* float: left; */
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -190,7 +188,7 @@ header {
 }
 @media only screen and (max-width: 768px) {
   .navbar {
-    padding: 2rem 10px;
+    padding: 4rem 15px;
   }
 
   .navbar__menu {
@@ -358,17 +356,13 @@ header {
   text-align: center;
 }
 .mid__img {
-  /* position: relative; */
   position: absolute;
   width: 40%;
   top: -10rem;
-  /* height: auto; */
 }
 @media only screen and (max-width: 968px) {
   .mid {
     background-position: 150% 120%;
-    /* background-size: 120%; */
-    /* height: 500px; */
   }
   .mid__img {
     position: relative;
@@ -382,7 +376,6 @@ header {
   }
   .mid__container {
     display: block;
-    /* flex-direction: column; */
     width: 90%;
     margin: auto;
     padding: 5rem 0;

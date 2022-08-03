@@ -388,11 +388,11 @@ header {
     text-align: left;
   }
 }
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .mid__title {
     font-size: 2.2rem;
   }
-}
+} */
 
 /********* bottom  ***********/
 .bottom {

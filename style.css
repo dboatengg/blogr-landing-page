@@ -127,8 +127,6 @@ header {
 .column {
   display: flex;
   align-items: center;
-  /* align-content: flex-end; */
-  /* justify-items: flex-end; */
   margin-left: auto;
 }
 .hamburger {
@@ -172,6 +170,10 @@ header {
   height: 60vh;
   color: var(--White);
 }
+.hero__container {
+  width: 90%;
+  max-width: 800px;
+}
 .hero__title {
   font-size: 4rem;
   font-weight: 500;
@@ -180,11 +182,53 @@ header {
 .hero__buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  /* border: 1px solid var(--White); */
 }
 .hero__button-one {
   color: var(--LightRed);
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 2rem 10px;
+  }
+
+  .navbar__menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hero {
+    height: 90vh;
+  }
+  .hero__buttons {
+    flex-direction: column;
+  }
+  .hero__text {
+    margin: 2rem 1rem;
+  }
+  .hero__title {
+    font-size: 3.2rem;
+  }
 }
 
 /********* about *********/
@@ -360,50 +404,16 @@ header {
 .bottom__container {
   display: flex;
   align-items: center;
-  /* grid-template-columns: 0.5fr 1.2fr; */
 }
 .bottom__img-mobile {
   display: none;
   width: 140%;
 }
-/* .bottom__img {
-} */
 .bottom__img-desktop {
   position: relative;
   left: -300px;
 }
 
-@media only screen and (max-width: 780px) {
-  .hero {
-    height: 70vh;
-  }
-  .navbar {
-    padding: 2rem 10px;
-  }
+/* @media only screen and (max-width: 780px) {
 
-  .navbar__menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  .navbar .menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 2.5rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-}
+} */

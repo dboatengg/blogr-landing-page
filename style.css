@@ -253,7 +253,11 @@ header {
     margin-top: 2rem;
   }
   .navbar__button {
-    background: linear-gradient(90deg, var(--VeryLightRed), var(--LightRed));
+    background: linear-gradient(
+      90deg,
+      var(--VeryLightRedGradient),
+      var(--LightRedGradient)
+    );
     color: var(--White);
   }
   .nav-item {

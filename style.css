@@ -46,6 +46,7 @@ body {
   font-size: 1.6rem;
   font-family: "Ubuntu", sans-serif;
   color: var(--VeryDarkGrayishBlue);
+  font-weight: 300;
 }
 a {
   text-decoration: none;
@@ -368,6 +369,7 @@ header {
   }
   .about__title {
     margin: 2rem 0;
+    font-size: 2.5rem;
   }
 }
 
@@ -398,6 +400,7 @@ header {
   border-top-right-radius: 10rem;
   border-bottom-left-radius: 5rem;
   margin-bottom: 5rem;
+  /* margin-top: 5rem; */
 }
 .mid__container {
   display: flex;
@@ -422,7 +425,7 @@ header {
 .mid__img {
   position: absolute;
   width: 40%;
-  top: -10rem;
+  top: 0rem;
 }
 @media only screen and (max-width: 968px) {
   .mid {
@@ -430,17 +433,20 @@ header {
   }
   .mid__img {
     position: relative;
-    width: 60rem;
+    width: 50rem;
     height: auto;
     max-width: 100%;
     margin-bottom: -150px;
+    top: -10rem;
   }
   .mid__title {
     margin: 0;
+    font-size: 2.5rem;
   }
   .mid__right {
     width: 100%;
     text-align: center;
+    margin-top: 2rem;
   }
   .mid__container {
     display: block;
@@ -455,7 +461,7 @@ header {
 
 /********* bottom  ***********/
 .bottom {
-  margin: 2rem 0;
+  margin-bottom: 5rem;
 }
 .bottom__container {
   display: flex;
@@ -498,6 +504,7 @@ header {
   }
   .bottom__img-mobile {
     display: block;
+    /* width: 150%; */
   }
   .bottom__text {
     width: 100%;

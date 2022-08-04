@@ -95,6 +95,8 @@ header {
 }
 .navbar__button {
   color: var(--LightRed);
+  background-color: var(--White);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 .dropdown .dropbtn {
   font-size: 16px;
@@ -154,9 +156,6 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--White);
-}
-.navbar__button {
   background-color: var(--White);
 }
 .button {
@@ -496,9 +495,6 @@ header {
     width: 90%;
     margin: auto;
   }
-  /* .bottom__img {
-    text-align: center;
-  } */
   .bottom__img-desktop {
     display: none;
   }

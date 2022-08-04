@@ -128,10 +128,10 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.fa-caret-down {
+.fa-angle-down {
   transition: all 0.2s ease-in-out;
 }
-.dropdown:hover .fa-caret-down {
+.dropdown:hover .fa-angle-down {
   transform: rotate(180deg);
 }
 .dropdown:hover span {
@@ -148,7 +148,7 @@ header {
 
 .bar {
   display: block;
-  width: 25px;
+  width: 35px;
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -258,6 +258,9 @@ header {
   }
   .nav-item {
     margin: 2.5rem 0;
+  }
+  .fa-angle-down {
+    color: var(--VeryLightRed);
   }
   .hamburger {
     padding: 2rem 0 2rem 2rem;

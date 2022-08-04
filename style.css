@@ -236,10 +236,11 @@ header {
     margin: 0 auto;
     border-radius: 10px;
     transition: 0.3s;
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
   }
   .navbar__menu.active {
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
   .menu__container {
     display: flex;

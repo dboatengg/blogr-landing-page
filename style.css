@@ -493,7 +493,7 @@ header {
 }
 .footer__div div a {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--GrayishBlue);
 }
 .footer__div div a:not(:last-child) {

@@ -163,9 +163,21 @@ header {
   outline: none;
   font-weight: 600;
 }
-.button__outline {
+.button--outline {
   background: transparent;
   border: 2px solid var(--White);
+  color: var(--White);
+}
+.button--outline:hover {
+  background-color: var(--White);
+  color: var(--LightRed);
+}
+.button--full:hover,
+.button--outline:hover {
+  transition: all 0.3s ease-in-out;
+}
+.button--full:hover {
+  background: var(--VeryLightRed);
   color: var(--White);
 }
 /* hero  */

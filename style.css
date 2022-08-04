@@ -223,16 +223,17 @@ header {
   .dropdown .dropbtn {
     color: var(--VeryDarkGrayishBlue);
   }
+  .dropdown:hover .dropdown-content {
+    text-align: center;
+  }
   .navbar__menu {
-    /* height: 40vh; */
     padding: 3rem 0;
     position: fixed;
     left: -100%;
-    /* left: 0; */
     top: 8rem;
     flex-direction: column;
     background-color: var(--White);
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     border-radius: 10px;
     transition: 0.3s;
@@ -249,13 +250,10 @@ header {
   .column {
     margin-left: 0;
     flex-direction: column;
+    margin-top: 2rem;
   }
   .navbar__button {
-    background: linear-gradient(
-      90deg,
-      var(--LightRedGradient),
-      var(--LightRed)
-    );
+    background: linear-gradient(90deg, var(--VeryLightRed), var(--LightRed));
     color: var(--White);
   }
   .nav-item {

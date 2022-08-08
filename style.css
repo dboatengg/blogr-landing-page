@@ -299,7 +299,7 @@ header {
 /********* about *********/
 .about {
   color: var(--VeryDarkBlue);
-  margin: 5rem auto;
+  margin: 7rem auto;
 }
 .about__container {
   display: flex;
@@ -341,7 +341,7 @@ header {
 @media only screen and (max-width: 1000px) {
   .about {
     width: 90%;
-    margin: 5rem auto;
+    /* margin: 5rem auto; */
   }
   .about__container {
     flex-direction: column;
@@ -399,8 +399,6 @@ header {
   color: var(--White);
   border-top-right-radius: 10rem;
   border-bottom-left-radius: 5rem;
-  margin-bottom: 5rem;
-  /* margin-top: 5rem; */
 }
 .mid__container {
   display: flex;
@@ -460,9 +458,9 @@ header {
 }
 
 /********* bottom  ***********/
-.bottom {
+/* .bottom {
   margin-bottom: 5rem;
-}
+} */
 .bottom__container {
   display: flex;
   align-items: center;
@@ -486,7 +484,7 @@ header {
 
 @media only screen and (max-width: 968px) {
   .bottom {
-    margin: 15rem auto 5rem auto;
+    margin: 7rem auto 7rem auto;
   }
   .bottom__container {
     flex-direction: column;
@@ -552,11 +550,6 @@ header {
   width: 100px;
 }
 @media only screen and (max-width: 670px) {
-  .footer__content {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-  }
   .footer__div h2 {
     margin-top: 4rem;
   }
@@ -565,5 +558,12 @@ header {
   }
   .footer__logo {
     margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .footer__content {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 }

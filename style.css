@@ -465,6 +465,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 4rem 0;
 }
 .bottom__text {
   width: 60%;

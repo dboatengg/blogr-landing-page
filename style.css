@@ -224,8 +224,16 @@ header {
   .dropdown .dropbtn {
     color: var(--VeryDarkGrayishBlue);
   }
-  .dropdown:hover .dropdown-content {
+  /* .dropdown:hover .dropdown-content {
     text-align: center;
+  } */
+  .dropdown-content {
+    /* position: relative; */
+    /* text-align: center; */
+    background-color: var(--GrayishBlue);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
   .navbar__menu {
     padding: 3rem 0;
@@ -243,7 +251,12 @@ header {
   .navbar__menu.active {
     left: 50%;
     transform: translate(-50%);
+    overflow: scroll;
+    z-index: 999;
   }
+  /* .dropdown-content.show {
+    display: block;
+  } */
   .menu__container {
     display: flex;
     flex-direction: column;
@@ -465,6 +478,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 4rem 0;
 }
 .bottom__text {
   width: 60%;

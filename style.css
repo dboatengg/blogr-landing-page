@@ -289,14 +289,11 @@ header {
   .hero {
     height: 90vh;
   }
-  .hero__buttons {
-    flex-direction: column;
-  }
   .hero__text {
     margin: 2rem 1rem;
   }
   .hero__title {
-    font-size: 3.2rem;
+    font-size: 3.3rem;
   }
   /**close**/
   .hamburger.active .bar:nth-child(2) {

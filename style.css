@@ -287,7 +287,7 @@ header {
     cursor: pointer;
   }
   .hero {
-    height: 90vh;
+    height: 80vh;
   }
   .hero__text {
     margin: 2rem 1rem;

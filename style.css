@@ -75,7 +75,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 70px;
+  /* padding: 10px 0px; */
 }
 .navbar__menu {
   display: flex;

@@ -28,18 +28,4 @@ function closeMenu() {
 // convert dropdown DOM nodes to list
 const dropDownContentList = Array.from(dropDownContent);
 const parentDropDownList = Array.from(parentDropDown);
-
-// open drop menu
-function openDropDown() {
-  parentDropDownList.forEach(function (item) {
-    if ((item.childNodes[0].style.display = "block")) {
-      item.childNodes[0].style.display = "none";
-    } else {
-      item.childNodes[0].style.display = "block";
-    }
-  });
-}
-
-parentDropDownList.forEach(function (item) {
-  item.addEventListener("click", openDropDown);
-});
+console.log(parentDropDownList);
